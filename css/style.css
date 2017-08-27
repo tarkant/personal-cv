@@ -493,6 +493,7 @@ ul.branch.master-branch {
   }
   /* Mobile responsive padding adjustements */
   .col-description {
+    float: unset;
     width: auto;
     padding: 30px 15px;
   }
