@@ -27,26 +27,24 @@
   <g
      transform="translate(-14.589884,-102.41784)"
      id="layer1">
-    <text
+    <g
        id="text4487"
-       y="115.91159"
-       x="13.266963"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.8166666px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.92604166"
-       xml:space="preserve"><tspan
+       aria-label="phone">
+      <path
+         id="path4743"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Material Icons';-inkscape-font-specification:'Material Icons';stroke-width:0.92604166"
-         y="115.91159"
-         x="13.266963"
-         id="tspan4485">phone</tspan></text>
-    <text
-       xml:space="preserve"
+         d="m 17.347334,107.75085 q 1.389063,2.69131 4.080371,4.08037 l 1.360124,-1.36012 q 0.289388,-0.28939 0.636653,-0.1447 1.041797,0.34727 2.199349,0.34727 0.26045,0 0.434082,0.17363 0.173633,0.17363 0.173633,0.43408 v 2.17041 q 0,0.26045 -0.173633,0.43408 -0.173632,0.17364 -0.434082,0.17364 -4.34082,0 -7.437272,-3.06752 -3.067513,-3.09645 -3.067513,-7.43727 0,-0.26045 0.173633,-0.43408 0.173633,-0.17363 0.434082,-0.17363 h 2.17041 q 0.26045,0 0.434082,0.17363 0.173633,0.17363 0.173633,0.43408 0,1.15755 0.347266,2.19935 0.115755,0.37621 -0.144694,0.63665 z" />
+    </g>
+    <g
+       id="text4499"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.35586834px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.83474177"
-       x="25.63903"
-       y="115.18119"
-       id="text4499"><tspan
-         id="tspan4497"
-         x="25.63903"
-         y="115.18119"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Material Icons';-inkscape-font-specification:'Material Icons';stroke-width:0.83474177">email</tspan></text>
+       aria-label="email">
+      <path
+         id="path4746"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Material Icons';-inkscape-font-specification:'Material Icons';stroke-width:0.83474177"
+         d="m 36.777616,106.28597 v -1.12168 l -4.460651,2.79117 -4.460652,-2.79117 v 1.12168 l 4.460652,2.76509 z m 0,-2.24337 q 0.443457,0 0.756485,0.33912 0.339114,0.33911 0.339114,0.78257 v 6.67793 q 0,0.44346 -0.339114,0.78257 -0.313028,0.33912 -0.756485,0.33912 h -8.921303 q -0.443456,0 -0.78257,-0.33912 -0.313028,-0.33911 -0.313028,-0.78257 v -6.67793 q 0,-0.44346 0.313028,-0.78257 0.339114,-0.33912 0.78257,-0.33912 z" />
+    </g>
     <g
        style="fill:#000000"
        transform="matrix(0.03728976,0,0,0.03728976,18.25915,82.738092)"
