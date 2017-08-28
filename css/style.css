@@ -233,7 +233,7 @@ nav {
   background-size: cover;
   display: inline-block;
   font-size: 0;
-  filter: invert(40%);
+  opacity: .4;
   transition: ease-in-out .25s;
 }
 
@@ -254,7 +254,7 @@ nav {
 }
 
 .social .button:hover, .social .button:active, .social .button:focus {
-  filter: invert(20%);
+  opacity: 1;
 }
 
 
@@ -464,10 +464,10 @@ ul.branch.master-branch {
     font-size: initial;
   }
   .social .button {
-    filter: invert(20%);
+    opacity: .4;
   }
   .personal-info.expanded .social .button {
-    filter: invert(80%);
+    opacity: 1;
   }
   /* Moile nav header bar */
   nav.mobile-nav {
@@ -555,7 +555,6 @@ ul.branch.master-branch {
     display: block;
     background-size: cover;
     background-position: -31px;
-    filter: invert(100%);
   }
   .call.svg-icon {
     background-color: transparent;
@@ -564,7 +563,6 @@ ul.branch.master-branch {
     display: block;
     background-size: cover;
     background-position: 1px;
-    filter: invert(100%);
   }
   .fab.expanded .options-buttons li {
     transform: translateY(-250%);
