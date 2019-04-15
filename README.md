@@ -1,7 +1,7 @@
 # Personal CV with commits tree!
 
 Hello and welcome! First of all, I'd like to ask you to check the end result here to understand what I'm talking about.
-[demo](http://www.tarekjellali.me/)
+[demo](http://tarekjellali.beldy.tk/)
 
 ## What is this?
 
