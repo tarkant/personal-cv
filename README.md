@@ -26,8 +26,7 @@ The mobile version is the biggest challenge and I can really say that I'm proud 
 ## Usage
 1. Clone this project.
 2. Replace all the content (make sure to respect the markup).
-3. **Change the analytics code!!**
-4. Upload and enjoy!
+3. Upload and enjoy!
 
 ## Why did you not use at least gulp for some minification?
 
@@ -39,5 +38,6 @@ If you inspect the code, you'll just see ul elements containing li elements and 
 
 ----
 ## changelog
+* 05-May-2019 : Stripped analytics code and updated some stuff
 * 28-Aug-2017 : Created everything, and visually fixed everything for Google Chrome and Firefox.
 * Soon : Changing the markup and adding explanations of how to use the commit tree.
