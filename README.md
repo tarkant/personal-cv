@@ -38,6 +38,7 @@ If you inspect the code, you'll just see ul elements containing li elements and 
 
 ----
 ## changelog
+* 13-March-2021: Added CapRover config files for easier deployment
 * 15-July-2020 : Updated bio and cursus
 * 05-May-2019 : Stripped analytics code and updated some stuff
 * 28-Aug-2017 : Created everything, and visually fixed everything for Google Chrome and Firefox.
