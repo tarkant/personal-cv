@@ -1,0 +1,679 @@
+/* Commits color palette */
+
+.master-branch {
+    color: cornflowerblue;
+  }
+  
+  .work_tn-branch {
+    color: orange;
+  }
+  
+  .finalstudyprjct-branch {
+    color: yellowgreen;
+  }
+  
+  .hopwork-branch {
+    color: orangered;
+  }
+  
+  .jasminespring-branch {
+    color: deepskyblue;
+  }
+  
+  
+  /* Main styling */
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .row {
+    padding: 4em;
+    position: relative;
+  }
+  
+  textarea, input, button {
+    outline: none;
+  }
+  
+  footer {
+    font-family: monospace;
+    background: #eee;
+    padding: 15px;
+    color: #545454;
+  }
+  
+  a {
+    color: #d4aa00;
+  }
+  
+  
+  /* The navs are for now hidden in the desktop version */
+  
+  nav {
+    display: none;
+  }
+  
+  
+  /* Header part styling */
+  
+  .readme-section {
+    font-family: monospace;
+    background-color: #f2f2f2;
+  }
+  
+  .readme-section img {
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .col-personal {
+    float: left;
+    width: 22%;
+  }
+  
+  .col-description {
+    float: left;
+    width: 78%;
+  }
+  
+  .readme-container {
+    position: relative;
+  }
+  
+  
+  /* Clearfix to get the floats display correctly */
+  
+  .readme-container:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  
+  .readme-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  .mono-description {
+    font-size: 1.2em;
+  }
+  
+  .mono-description ul {
+    color: #1574b7;
+    list-style: none;
+  }
+  
+  .mono-description ul li:before {
+    content: "*";
+    margin-right: 1em;
+  }
+  
+  .purpl {
+    color: #800080;
+  }
+  
+  .email-container {
+    color: #d4aa00;
+  }
+  
+  .display-name {
+    font-size: 2.5em;
+    font-family: monospace;
+    margin-bottom: .75em;
+    margin-top: .25em;
+  }
+  
+  .display-name:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80%;
+    background: #d4d4d4;
+    margin-top: .25em;
+  }
+  
+  .personal-info {
+    width: 80%;
+  }
+  
+  
+  /**
+    * SEX ! Haha I got your attention :)
+    * What's up? What are you doing over here?
+    * Interested in my code? It's on CC-BY-NC ;)
+    * You can though donate to me, it will be hightly appriciated
+    * If you're as poor as I am, well, even a tweet back would be Great :D !
+    */
+  
+  
+  /* Commits tree styling */
+  
+  .commits-section {
+    font-family: monospace;
+    font-size: 1.5em;
+    background: white;
+  }
+  
+  .commits-section ul {
+    list-style: none;
+    position: relative;
+    padding-left: 3em;
+    margin-top: 1em;
+  }
+  
+  .commits-section ul li {
+    padding-bottom: 1em;
+    position: relative;
+    padding-left: 4em;
+  }
+  
+  .commits-section ul li:before {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: solid .105em;
+    border-radius: 100%;
+    position: absolute;
+    left: -2em;
+    background: white;
+    z-index: 2;
+  }
+  
+  .commits-section ul:before {
+    content: "";
+    border: solid .05em;
+    position: absolute;
+    left: 1.55em;
+    height: 100%;
+  }
+  
+  .commit.merge {
+    height: 0;
+  }
+  
+  .commit.merge:before {
+    content: "";
+    border: solid .105em;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0;
+    border-top-right-radius: 1em;
+    position: absolute;
+    top: -1em;
+    width: 3em;
+    height: 3em;
+    left: -4.45em;
+    background: none;
+  }
+  
+  
+  /* SVG buttons, because why not? */
+  
+  .svg-icon {
+    width: 42px;
+    height: 42px;
+    background-image: url(./img/icons.svg);
+  }
+  
+  
+  /* ./SVG buttons */
+  
+  
+  /* Social buttons desktop */
+  
+  .social .button {
+    width: 23px;
+    height: 24px;
+    background-color: transparent;
+    background-size: cover;
+    display: inline-block;
+    font-size: 0;
+    opacity: .4;
+    transition: ease-in-out .25s;
+  }
+  
+  .twitter.svg-icon {
+    background-position: -46px;
+  }
+  
+  .github.svg-icon {
+    background-position: -69px;
+  }
+  
+  .stackoverflow.svg-icon {
+    background-position: -93px;
+  }
+  
+  .linkedin.svg-icon {
+    background-position: -116px;
+  }
+  
+  .social .button:hover, .social .button:active, .social .button:focus {
+    opacity: 1;
+  }
+  
+  
+  /* ./Social buttons desktop */
+  
+  
+  /* Merge little node */
+  
+  .commit.merge:after {
+    content: "";
+    border: solid .35em;
+    width: .01em;
+    height: .01em;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    left: -4.72em;
+    top: -1.25em;
+    z-index: 9;
+    opacity: 1;
+  }
+  
+  .commit.new-branch {
+    height: 0;
+    margin-bottom: 2em;
+  }
+  
+  .commit.new-branch:before {
+    content: "";
+    border: solid .105em;
+    border-left: none;
+    border-top: none;
+    border-radius: 0;
+    border-bottom-right-radius: 1em;
+    position: absolute;
+    top: -1.2em;
+    width: 3em;
+    height: 3em;
+    left: -4.45em;
+    background: none;
+    z-index: 0;
+  }
+  
+  
+  /* Branch little node */
+  
+  .commit.new-branch:after {
+    content: "";
+    border: solid .35em;
+    width: .01em;
+    height: .01em;
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    left: -4.75em;
+    top: 1.5em;
+    z-index: 9;
+    opacity: 1;
+  }
+  
+  li.commit:after {
+    content: "";
+    position: absolute;
+    left: -1.5em;
+    top: 0;
+    width: 5em;
+    height: 1.2em;
+    background: currentColor;
+    opacity: .25;
+    z-index: -1;
+    z-index: 0;
+  }
+  
+  
+  /* ./Commits tree styling */
+  
+  
+  /* Commits description styling */
+  
+  .commits-section ul li.commit span {
+    color: black;
+    font-size: .75em;
+  }
+  
+  .commits-section ul li.commit span.title {
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    margin-right: .5em;
+    float: left;
+  }
+  
+  .commits-section ul li.commit span.date {
+    display: block;
+    font-size: .5em;
+    font-style: italic;
+    color: grey;
+  }
+  
+  .commits-section ul li.commit span.desc {
+    display: block;
+    margin: auto;
+  }
+  
+  
+  /* ./Commits description styling */
+  
+  
+  /* Center up the tree */
+  
+  ul.branch.master-branch {
+    width: 80%;
+    margin: auto;
+  }
+  
+  
+  /* Responsive attributes */
+  
+  /* Flex is fun, let's add some to make things look better */
+  
+  @media screen and (min-width: 768px) {
+    .readme-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  
+  /* Tablet responsive propreties */
+  
+  @media screen and (max-width: 768px) {
+    /* Row reset padding */
+    .row {
+      padding: 0;
+      overflow: hidden;
+    }
+    /* Reset personal info col size */
+    .col-personal {
+      width: 100%;
+      background-image: url(./img/tarek-jellali.jpg);
+      background-size: cover;
+      height: 100vw;
+      position: relative;
+    }
+    nav {
+      display: block;
+    }
+    /* Hide the picture to replace it with a background for parallax */
+    .readme-section img {
+      width: 100%;
+      display: none;
+    }
+    /* Fix the position and add some shading */
+    .mbl-container-grey {
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0), #000);
+      color: white;
+      padding: 1em;
+    }
+    /* Reset the display name font family */
+    .display-name {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      text-shadow: rgba(0, 0, 0, 0.45) 0px 2px 5px;
+      margin-bottom: .25em;
+    }
+    /* Show the plus button */
+    .display-name:after {
+      display: none;
+    }
+    .display-name:after {
+      display: none;
+    }
+    span.mini-plus {
+      display: inline-block;
+      position: relative;
+      width: .75em;
+      height: .75em;
+      background: white;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 5px;
+      text-shadow: none;
+    }
+    span.mini-plus:before, span.mini-plus:after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 65%;
+      background: #2f2f2f;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: ease-out .35s;
+    }
+    span.mini-plus:after {
+      transform: rotate(90deg);
+    }
+    .display-name.minus span.mini-plus:before {
+      transform: rotate(90deg);
+    }
+    .display-name.minus span.mini-plus:after {
+      transform: rotate(270deg);
+    }
+    /* Prepare the CSS animation stuff we'll need for the + button */
+    .personal-info {
+      width: 100%;
+      font-size: 0;
+      transition: ease-out .35s;
+    }
+    .personal-info.expanded {
+      font-size: initial;
+    }
+    .social .button {
+      filter: invert(1);
+      filter: brightness(5);
+      opacity: .4;
+    }
+    .personal-info.expanded .social .button {
+      opacity: 1;
+    }
+    /* Moile nav header bar */
+    nav.mobile-nav {
+      position: fixed;
+      display: table-cell;
+      top: 0;
+      left: 0;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      background: #2196F3;
+      color: white;
+      width: 100%;
+      font-size: 1.3em;
+      padding-top: .75em;
+      padding-bottom: .75em;
+      padding-left: 15px;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 5px;
+      z-index: 99;
+    }
+    /* Mobile responsive padding adjustements */
+    .col-description {
+      float: unset;
+      width: auto;
+      padding: 30px 15px;
+    }
+    ul.branch.master-branch {
+      width: auto;
+      padding-top: 30px;
+    }
+    li.commit:after {
+      width: 2.5em;
+    }
+    .commits-section ul li {
+      padding-left: 2em;
+    }
+    /* Mobile fab button */
+    nav.fab {
+      position: fixed;
+      width: 32px;
+      height: 32px;
+      right: 15px;
+      bottom: 15px;
+      z-index: 99;
+      padding: 1em;
+      background: #FF9800;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 5px;
+    }
+    .options-buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: block;
+      margin: auto;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      -webkit-margin-start: 0;
+      -webkit-margin-end: 0;
+      -webkit-padding-start: 0;
+    }
+    .options-buttons li {
+      padding: 10px;
+      width: 32px;
+      height: 32px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: currentColor;
+      border-radius: 100%;
+      margin-bottom: 16px;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 5px;
+      z-index: 2;
+    }
+    .mail.svg-icon {
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-size: cover;
+      background-position: -31px;
+    }
+    .call.svg-icon {
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-size: cover;
+      background-position: 1px;
+    }
+    .fab.expanded .options-buttons li {
+      transform: translateY(-250%);
+      opacity: 1;
+    }
+    .fab .options-buttons li {
+      opacity: 0;
+      transition: ease-in-out .35s;
+    }
+    .fab-button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: none;
+      border: none;
+      margin: auto;
+      background-color: transparent;
+      display: block;
+      z-index: 4;
+    }
+    .fab-button:before, .fab-button:after {
+      content: "";
+      position: absolute;
+      width: 6%;
+      height: 50%;
+      background: white;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      transition: ease-in-out .35s;
+    }
+    .fab-button:after {
+      transform: rotate(90deg);
+    }
+    .fab.expanded .fab-button:after {
+      transform: rotate(225deg);
+      left: 15%;
+      bottom: -5%;
+    }
+    .fab.expanded .fab-button:before {
+      transform: rotate(-225deg);
+      height: 30%;
+      left: -35%;
+      bottom: -20%;
+    }
+    /* fab backdrop for more awesomeness */
+    .fab-backdrop.expanded {
+      display: block;
+      position: fixed;
+      opacity: 1;
+    }
+    .fab-backdrop {
+      display: block;
+      opacity: 0;
+      position: initial;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85) 100%);
+      z-index: 11;
+      transition: ease-out .35s;
+    }
+    /* Transition delays for fancy buttons appearing */
+    ul.options-buttons li:nth-child(1) {
+      transition-delay: .1s;
+    }
+  }
+  
+  /** Dark mode styling **/
+  
+  @media(prefers-color-scheme:dark) {
+      .readme-section {
+      background: #141619;
+      color: #a0a5aa;
+      }
+  
+      .commits-section {
+          background: #191b1d;
+          color: #a0a5aa
+      }
+  
+      .commits-section ul li.commit span {
+          color: #a0a5aa
+      }
+  
+      .commits-section ul li:before {
+          background: #191b1d;
+      }
+  
+      footer {
+          background: #141619;
+          color: #a0a5aa;
+      }
+  }
+  
