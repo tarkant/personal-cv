@@ -5,11 +5,13 @@ import DATA from './assets/data.json';
  * you can use back all this work in any other work
  * I'd love to be credited for this work if it helped.
  */
- var _email = DATA.email;
+ const _email = DATA.email;
+ const _phone = DATA.phone;
 
  function putEmails() {
    /* Just a classic JS email protection */
    (document.querySelector(".email-container") as HTMLDivElement).innerText = "(mailto:" + _email + ")";
+   (document.querySelector(".call") as HTMLDivElement).setAttribute("href", "tel:" + _phone);
    document.querySelector(".button.mail").setAttribute("href", "mailto:" + _email);
  }
  putEmails();
