@@ -197,6 +197,9 @@
   <footer>
     This work is under <a href="https://creativecommons.org/licenses/by-nc/2.0/" target="_blank" rel="noopener">CC-BY-NC licence.</a> You can find this work in <a href="https://github.com/tarkant/personal-cv" target="_blank" rel="noopener">my github</a>.
   </footer>
+  <%if (cfAnalytics) { %>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "<%= cfAnalytics %>"}'></script><!-- End Cloudflare Web Analytics -->
+  <% } %>
 </body>
 
 </html>

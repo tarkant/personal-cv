@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CopywebpackPlugin = require('copy-webpack-plugin');
 
+const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+
 module.exports = {
   context: __dirname,
   entry: {
@@ -38,7 +40,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      templateParameters: {
+        cfAnalytics: dotenv.parsed && dotenv.parsed.CF_ANALYTICS,
+      }
     }),
     new CopywebpackPlugin({
       patterns: [
