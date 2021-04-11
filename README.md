@@ -1,43 +1,116 @@
 # Personal CV with commits tree!
 
-Hello and welcome! First of all, I'd like to ask you to check the end result here to understand what I'm talking about.
-[demo](https://tarekjellali.com/)
+Show off your curriculum with a visually attractive commits tree ✨ .
 
-## What is this?
+Checkout the [demo](https://tarekjellali.com/) here.
 
-This is a personal webpage inspired from a CV template I've conceived. It's all inspired from git where you'll see a section with a Readme.md and a commits tree.
+## Features 🧩
 
-You may then ask "Why not just any generic template?". Well first of all because it would be a shame for a Frontend Web developer to use a template (especially that it's about showcasing his talent). But also because I got pretty bored of all those CV templates that are just a copy of a copy.
+- A simple build process based on [webpack-typescript-sass-boilerplate](https://github.com/tarkant/webpack-typescript-sass-boilerplate)
+- SEO-friendly/Social-friendly tags and attributes already setup
+- Auto dark mode following the user's preferences
+- Google Analytics and CloudFlare analytics ready
+- A commit tree based on `<ul>` and `<li>`
+- No dependency, everything is vanilla
+- TypeScript and SCSS/SASS
+- A clean print template
+- Mobile-first layout
 
-## But why this? Why a commit tree?
+## How to use it 🤔
 
-Why not? As a programmer, a git tree represents well our evolution, I really think it's the best way to show off complex path. Also, it will show that you master the art of git *(even though honestly, I still don't get a lot of things about it)*.
+Clone this repository, run an `npm install` to install all the dev dependencies needed (webpack, TypeScript, SCSS/SASS loader).
 
-## Can I use this?
+Next to run the project simply `npm start`, the app will run on `http://localhost:8080/`, if you need to change the dev server port, add `--port 8888` to the `start` entry under `package.json` :
 
-Of course! This work is under [CC-BY-NC](https://creativecommons.org/licenses/by-nc/2.0/) licence.
+```json
+{
+  "name": "your-personal-cv",
+  "version": "1.1.0",
+  "description": "Your personal CV description.",
+  "scripts": {
+  "start": "webpack serve --progress --mode development --port 8888",
+  ...
+}
+```
 
-## I see no framework over here!
+Replace the `package.json` file with the relevant info about you.
 
-That's because I've used none of 'em! All this is pure HTML, CSS and JavaScript. That's what makes it even awesome.
+Next head to the `index.html` file and replace/add your personal info and achievements. For each entry in the commit tree just add for example:
 
-The mobile version is the biggest challenge and I can really say that I'm proud of it.
+```html
+<li class="commit" data-date="2004-08-01">
+    <span class="title">Added TCP/IP abilities:</span>
+    <span class="desc">Discovered the Internet</span>
+    <span class="date">Around August 2004</span>
+</li>
+```
 
-## Usage
-1. Clone this project.
-2. Replace all the content (make sure to respect the markup).
-3. Upload and enjoy!
+Please pay close attention to `data-date` attribute to keep accurate dates for better SEO. The rest are straightforward.
 
-## Why did you not use at least gulp for some minification?
+Branches are nested `<ul>` in `<ul>` as follows:
 
-I made this in almost 3 days. I didn't want to add tooling because it will just be a waste of time (and I'll start procrastinating) so I just made all this, put it on my VPS, pointed the domain and put it behind CloudFlare to minify everything automatically.
+```html
+<!-- Jasmine Spring branch -->
+<ul class="branch jasminespring-branch" data-label="jasminespring">
+    <li class="commit merge" data-branch="master" data-date="2011-09-01"></li>
+    <li class="commit" data-date="2011-04-01">
+        <span class="title">Preparatory class:</span>
+        <span class="desc">Technical cursus - Aborded.</span>
+        <span class="date">April 2011</span>
+    </li>
+    <li class="commit new-branch" data-branch="master" data-date="2010-06-15"> </li>
+</ul>
+```
 
-## How does the commit tree work?
+Notice the commit sandwiched between a `class="commit merge"` and `class="commit new-branch"` that represent the branching of your commits. You can omit the `class="commit merge"` to leave a branch open for example.
+
+⚠ Last but not least, **don't forget to edit `src/assets/data.json` with your own personal data** !
+## Analytics 📊
+
+I've added Google Analytics v4 as well as CloudFlare Analytics to the `index.html` template as follows:
+
+```html
+</footer>
+  <%if (cfAnalytics) { %>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "<%= cfAnalytics %>"}'></script><!-- End Cloudflare Web Analytics -->
+  <% } %>
+  <%if (gAnalytics) { %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= gAnalytics %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '<%= gAnalytics %>');
+  </script>
+  <% } %>
+</body>
+```
+
+For both you can notice it's surrounded in a if block, the scrips will be injected only if you supply environnement variables as follows:
+
+`CF_ANALYTICS=YOUR_CF_ANALYTICS_ID`
+
+`GA_ANALYTICS=YOUR_GA_V4_ID`
+
+## Other tools 🛠
+
+You'll notice there is ESLint already setup, you can run `npm run lint` to lint the full project.
+
+## Contribution/Issues ✋
+
+Feel free to fork and PR to the project (as long as your PR is clear of course). If you notice an issue or anything of the sorts, please let me know, I'll be happy to fix/help!
+
+## How does the commit tree work? 🎋
 
 If you inspect the code, you'll just see ul elements containing li elements and other nested ul elements. That's it! Everything is static and is based on uls. Awesome isn't it?
 
 ----
-## changelog
+## Changelog ⌚
+
+* 11-April-2021: Added Google Analytics and CloudFlare analytics integration
+* 17-March-2021: Added webpack config and build process
 * 13-March-2021: Added CapRover config files for easier deployment
 * 15-July-2020 : Updated bio and cursus
 * 05-May-2019 : Stripped analytics code and updated some stuff

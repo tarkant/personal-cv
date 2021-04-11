@@ -1,9 +1,9 @@
 {
   "name": "tarek-jellali-personal-cv",
-  "version": "1.1.0",
-  "description": "A simple Webpack + TypeScript + SASS boilerplate to get you started in making a website.",
+  "version": "1.1.1",
+  "description": "Show off your curriculum with a visually attractive commits tree.",
   "scripts": {
-    "start": "webpack serve --progress --mode development",
+    "start": "webpack serve --progress --mode development --port 9090",
     "build": "webpack --progress --mode production",
     "lint": "eslint src/*.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,13 @@
   "keywords": [
     "webpack",
     "typescript",
-    "boilerplate",
-    "sass"
+    "personal",
+    "sass",
+    "cv",
+    "curriculum",
+    "mobile-first",
+    "personal page",
+    "printable cv"
   ],
   "author": "Tarek Jellali",
   "license": "MIT",

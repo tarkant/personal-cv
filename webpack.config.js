@@ -38,7 +38,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      templateParameters: {
+        cfAnalytics: process.env && process.env.CF_ANALYTICS,
+        gAnalytics: process.env && process.env.GA_ANALYTICS,
+      }
     }),
     new CopywebpackPlugin({
       patterns: [
