@@ -200,6 +200,17 @@
   <%if (cfAnalytics) { %>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "<%= cfAnalytics %>"}'></script><!-- End Cloudflare Web Analytics -->
   <% } %>
+  <%if (gAnalytics) { %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= cfAnalytics %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '<%= cfAnalytics %>');
+  </script>
+  <% } %>
 </body>
 
 </html>
