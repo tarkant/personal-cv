@@ -109,6 +109,7 @@ If you inspect the code, you'll just see ul elements containing li elements and 
 ----
 ## Changelog ⌚
 
+* 20-Feb-2022: nom audit fix + upgraded webpack Dev server config
 * 11-April-2021: Added Google Analytics and CloudFlare analytics integration
 * 17-March-2021: Added webpack config and build process
 * 13-March-2021: Added CapRover config files for easier deployment
