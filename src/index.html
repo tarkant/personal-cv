@@ -11,207 +11,263 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@tarkant_t29" />
   <meta name="twitter:title" content="Tarek Jellali | Online Resume" />
-  <meta name="twitter:description" content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch." />
+  <meta name="twitter:description"
+    content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch." />
   <meta name="twitter:image" content="https://tarekjellali.com/img/tarek-jellali.jpg" />
   <meta property="og:url" content="https://tarekjellali.com" />
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Tarek Jellali | Online Resume" />
-  <meta property="og:description" content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch." />
+  <meta property="og:description"
+    content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch." />
   <meta property="og:image" content="https://tarekjellali.com/img/tarek-jellali.jpg" />
 </head>
 
 <body>
-  <nav class="mobile-nav" style="opacity:0">
-    Tarek Jellali
-  </nav>
-  <div class="fab-backdrop"></div>
-  <nav class="fab">
-    <button class="fab-button svg-icon" aria-label="Contact menu"></button>
-    <ul class="options-buttons">
-      <li class="finalstudyprjct-branch"><a class="button call svg-icon" href="tel:" rel="noopener" aria-label="Mobile phone"></a></li>
-      <li class="hopwork-branch"><a class="button mail svg-icon" href="mailto:" rel="noopener" aria-label="Email"></a></li>
-    </ul>
-  </nav>
-  <div class="row readme-section">
-    <div class="readme-container" itemscope itemtype="http://schema.org/Person">
-      <div class="col-personal">
-        <div class="img-info">
-          <img src="./img/tarek-jellali.jpg" itemprop="image" alt="Tarek Jellali portrait photo" />
-        </div>
-        <div class="mbl-container-grey">
-          <div class="display-name">
-            <span itemprop="givenName">Tarek</span>
-            <span itemprop="familyName">Jellali</span>
-            <meta itemprop="gender" content="Male" />
-            <span class="mini-plus"></span>
+  <style>
+    .loader {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @media(prefers-color-scheme:dark) {
+      .loader {
+        background-color: #141619;
+      }
+    }
+
+    .loader:after {
+      content: "";
+      width: 5rem;
+      height: 5rem;
+      align-self: center;
+      justify-self: center;
+      border: solid 1rem #e0e0e0;
+      border-left: solid 1rem #016de5;
+      border-radius: 100%;
+      animation: spin 2s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div class="loader" style="opacity: 1;"></div>
+  <div class="content" style="opacity: 0;">
+    <nav class="mobile-nav" style="opacity:0">
+      Tarek Jellali
+    </nav>
+    <div class="fab-backdrop"></div>
+    <nav class="fab">
+      <button class="fab-button svg-icon" aria-label="Contact menu"></button>
+      <ul class="options-buttons">
+        <li class="finalstudyprjct-branch"><a class="button call svg-icon" href="tel:" rel="noopener"
+            aria-label="Mobile phone"></a></li>
+        <li class="hopwork-branch"><a class="button mail svg-icon" href="mailto:" rel="noopener" aria-label="Email"></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="row readme-section">
+      <div class="readme-container" itemscope itemtype="http://schema.org/Person">
+        <div class="col-personal">
+          <div class="img-info">
+            <img src="./img/tarek-jellali.jpg" itemprop="image" alt="Tarek Jellali portrait photo" />
           </div>
-          <div class="personal-info">
-            <div itemprop="nationality" itemscope itemtype="http://schema.org/Country">
-              <strong>Nationality:</strong>
-              <span itemprop="name">Tunisia</span>
+          <div class="mbl-container-grey">
+            <div class="display-name">
+              <span itemprop="givenName">Tarek</span>
+              <span itemprop="familyName">Jellali</span>
+              <meta itemprop="gender" content="Male" />
+              <span class="mini-plus"></span>
             </div>
-            <strong>Born:</strong>
-            <meta id="birthdate" itemprop="birthDate" content="1991-05-29" /> 29 May 1991
-            <div itemprop="homeLocation" itemscope itemtype="http://schema.org/PostalAddress">
-              <strong>Residence:</strong>
-              <span itemprop="addressLocality">Paris</span>,
-              <span itemprop="addressCountry" itemscope itemtype="http://schema.org/Country">
-                <span itemprop="name">France</span>
-              </span>
-            </div>
-            <div class="social">
-              <a class="button twitter svg-icon" href="https://twitter.com/tarek_jellali" target="_blank" rel="noopener">twitter</a>
-              <a class="button github svg-icon" href="https://github.com/tarkant" target="_blank" rel="noopener">github</a>
-              <a class="button stackoverflow svg-icon" href="https://stackoverflow.com/users/3323672/tarek-jellali" target="_blank" rel="noopener">stack overflow</a>
-              <a class="button linkedin svg-icon" href="https://www.linkedin.com/in/jellalitarek/" target="_blank" rel="noopener">linkedin</a>
-              <a class="button blog svg-icon" href="https://blog.tarekjellali.com">blog</a>
+            <div class="personal-info">
+              <div itemprop="nationality" itemscope itemtype="http://schema.org/Country">
+                <strong>Nationality:</strong>
+                <span itemprop="name">Tunisia</span>
+              </div>
+              <strong>Born:</strong>
+              <meta id="birthdate" itemprop="birthDate" content="1991-05-29" /> 29 May 1991
+              <div itemprop="homeLocation" itemscope itemtype="http://schema.org/PostalAddress">
+                <strong>Residence:</strong>
+                <span itemprop="addressLocality">Paris</span>,
+                <span itemprop="addressCountry" itemscope itemtype="http://schema.org/Country">
+                  <span itemprop="name">France</span>
+                </span>
+              </div>
+              <div class="social">
+                <a class="button twitter svg-icon" href="https://twitter.com/tarek_jellali" target="_blank"
+                  rel="noopener">twitter</a>
+                <a class="button github svg-icon" href="https://github.com/tarkant" target="_blank"
+                  rel="noopener">github</a>
+                <a class="button stackoverflow svg-icon" href="https://stackoverflow.com/users/3323672/tarek-jellali"
+                  target="_blank" rel="noopener">stack overflow</a>
+                <a class="button linkedin svg-icon" href="https://www.linkedin.com/in/jellalitarek/" target="_blank"
+                  rel="noopener">linkedin</a>
+                <a class="button blog svg-icon" href="https://blog.tarekjellali.com">blog</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-description">
-        <div itemprop="description" class="mono-description">
-          <h2>#README.md</h2>
-          <p>My name is Tarek Jellali and I am a Frontend Web Developer. Mainly I...
+        <div class="col-description">
+          <div itemprop="description" class="mono-description">
+            <h2>#README.md</h2>
+            <p>My name is Tarek Jellali and I am a Frontend Web Developer. Mainly I...
             <ul>
-              <li>Work on complex Web Applications built on Angular, VueJS, StencilJS and other JavaScript frameworks.</li>
+              <li>Work on complex Web Applications built on Angular, VueJS, StencilJS and other JavaScript frameworks.
+              </li>
               <li>Prefer to work with TypeScript but of course can do the same with JavaScript.</li>
               <li>Tinker around with Unix-based systems and other programming languages.</li>
               <li>Used to work on SEO optimizations and heavy-modified WordPress websites.</li>
               <li>Design some flyers, logos and concepts with Inkscape or GIMP.</li>
             </ul>
             Want to get in touch? Here's my <span class="purpl">[email]</span><span class="email-container"></span>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row commits-section">
-    <ul class="branch master-branch" data-label="master">
-      <li class="commit" data-date="2020-01-15">
-        <span class="title">Consultant <a href="https://teemz.com/" target="_blank" rel="noopener">@TeemZ</a>:</span>
-        <span class="desc">Frontend Web Consultant</span>
-        <span class="date">January 2020 - Now</span>
-      </li>
-      <li class="commit" data-date="2018-10-01">
-        <span class="title">Consultant <a href="https://www.talentech.fr/" target="_blank" rel="noopener">@Talentech Group</a>:</span>
-        <span class="desc">Frontend Web Consultant</span>
-        <span class="date">October 2018 - January 2020</span>
-      </li>
-      <li class="commit" data-date="2017-07-29">
-        <span class="title">Graduated @ESPRIM:</span>
-        <span class="desc">Computer Science Engineering</span>
-        <span class="date">July 2017</span>
-      </li>
-      <!-- Work in Tunisia branch -->
-      <ul class="branch work_tn-branch" data-label="work_tn">
-        <li class="commit merge" data-branch="master" data-date="2017-07-01"></li>
-        <li class="commit" data-date="2016-05-01">
-          <span class="title">Founded ng-enious</span>
-          <span class="desc">Frontend Web lead dev, server management, management</span>
-          <span class="date">May 2016</span>
+    <div class="row commits-section">
+      <ul class="branch master-branch" data-label="master">
+        <li class="commit" data-date="2020-01-15">
+          <span class="title">Consultant <a href="https://teemz.com/" target="_blank" rel="noopener">@TeemZ</a>:</span>
+          <span class="desc">Frontend Web Consultant</span>
+          <span class="date">January 2020 - Now</span>
         </li>
-        <!-- Hopwork branch -->
-        <ul class="branch hopwork-branch" data-label="hopwork">
-          <li class="commit merge" data-branch="work_tn" data-date="2016-02-15"></li>
-          <li class="commit" data-date="2016-02-01">
-            <span class="title">Frontend Web developer Freelancer:</span>
-            <span class="desc">Via Hopwork</span>
-            <span class="date">May 2015 to February 2016</span>
+        <li class="commit" data-date="2018-10-01">
+          <span class="title">Consultant <a href="https://www.talentech.fr/" target="_blank" rel="noopener">@Talentech
+              Group</a>:</span>
+          <span class="desc">Frontend Web Consultant</span>
+          <span class="date">October 2018 - January 2020</span>
+        </li>
+        <li class="commit" data-date="2017-07-29">
+          <span class="title">Graduated @ESPRIM:</span>
+          <span class="desc">Computer Science Engineering</span>
+          <span class="date">July 2017</span>
+        </li>
+        <!-- Work in Tunisia branch -->
+        <ul class="branch work_tn-branch" data-label="work_tn">
+          <li class="commit merge" data-branch="master" data-date="2017-07-01"></li>
+          <li class="commit" data-date="2016-05-01">
+            <span class="title">Founded ng-enious</span>
+            <span class="desc">Frontend Web lead dev, server management, management</span>
+            <span class="date">May 2016</span>
           </li>
-          <li class="commit new-branch" data-branch="work_tn" data-date="2015-12-31"> </li>
+          <!-- Hopwork branch -->
+          <ul class="branch hopwork-branch" data-label="hopwork">
+            <li class="commit merge" data-branch="work_tn" data-date="2016-02-15"></li>
+            <li class="commit" data-date="2016-02-01">
+              <span class="title">Frontend Web developer Freelancer:</span>
+              <span class="desc">Via Hopwork</span>
+              <span class="date">May 2015 to February 2016</span>
+            </li>
+            <li class="commit new-branch" data-branch="work_tn" data-date="2015-12-31"> </li>
+          </ul>
+          <!-- ./Hopwork branch -->
+          <li class="commit" data-date="2015-12-31">
+            <span class="title">Frontend Web developer @ExactOffice</span>
+            <span class="desc">Pure JavaScript user tracking project</span>
+            <span class="date">April 2015 to December 2015</span>
+          </li>
+          <li class="commit" data-date="2015-03-31">
+            <span class="title">WordPress developer @digitika</span>
+            <span class="desc">Frontend and Backend developer</span>
+            <span class="date">September 2014 to March 2015</span>
+          </li>
+          <li class="commit new-branch" data-branch="master" data-date="2014-09-15"> </li>
         </ul>
-        <!-- ./Hopwork branch -->
-        <li class="commit" data-date="2015-12-31">
-          <span class="title">Frontend Web developer @ExactOffice</span>
-          <span class="desc">Pure JavaScript user tracking project</span>
-          <span class="date">April 2015 to December 2015</span>
+        <!-- ./Work in Tunisia branch -->
+        <li class="commit" data-date="2014-09-14">
+          <span class="title">Started studies @ESPRIM:</span>
+          <span class="desc">Computer Science Engineering</span>
+          <span class="date">September 2014</span>
         </li>
-        <li class="commit" data-date="2015-03-31">
-          <span class="title">WordPress developer @digitika</span>
-          <span class="desc">Frontend and Backend developer</span>
-          <span class="date">September 2014 to March 2015</span>
+        <li class="commit" data-date="2014-06-15">
+          <span class="title">Licence Graduation @ISIMM:</span>
+          <span class="desc">Computer Science degree</span>
+          <span class="date">June 2014</span>
         </li>
-        <li class="commit new-branch" data-branch="master" data-date="2014-09-15"> </li>
+        <!-- Final Study Project branch -->
+        <ul class="branch finalstudyprjct-branch" data-label="finalstudyprjct">
+          <li class="commit merge" data-branch="master" data-date="2014-06-01"></li>
+          <li class="commit" data-date="2014-04-01">
+            <span class="title">Intern @Proxym-IT:</span>
+            <span class="desc">Created a Single Page App JS Framework</span>
+            <span class="date">April 2014</span>
+          </li>
+          <li class="commit new-branch" data-branch="master" data-date="2014-03-01"> </li>
+        </ul>
+        <!-- ./Final Study Project branch -->
+        <li class="commit" data-date="2011-09-14">
+          <span class="title">Started @ISIMMM:</span>
+          <span class="desc">Computer Science degree</span>
+          <span class="date">September 2011</span>
+        </li>
+        <!-- Jasmine Spring branch -->
+        <ul class="branch jasminespring-branch" data-label="jasminespring">
+          <li class="commit merge" data-branch="master" data-date="2011-09-01"></li>
+          <li class="commit" data-date="2011-04-01">
+            <span class="title">Preparatory class:</span>
+            <span class="desc">Technical cursus - Aborded.</span>
+            <span class="date">April 2011</span>
+          </li>
+          <li class="commit new-branch" data-branch="master" data-date="2010-06-15"> </li>
+        </ul>
+        <!-- ./Jasmine Spring branch -->
+        <!-- Ignore me, I'm just helping clear this mess up -->
+        <li class="commit" data-date="2010-06-15">
+          <span class="title">Added basic dependecies:</span>
+          <span class="desc">Bachelor degree</span>
+          <span class="date">June 2010</span>
+        </li>
+        <li class="commit" data-date="2006-05-01">
+          <span class="title">Web 1.0:</span>
+          <span class="desc">Started learning HTML, CSS, PHP</span>
+          <span class="date">Around 2006</span>
+        </li>
+        <li class="commit" data-date="2004-08-01">
+          <span class="title">Added TCP/IP abilities:</span>
+          <span class="desc">Discovered the Internet</span>
+          <span class="date">Around August 2004</span>
+        </li>
+        <li class="commit" data-date="1991-05-29">
+          <span class="title">Initial commit:</span>
+          <span class="desc">Born innocent and vulnerable</span>
+          <span class="date">29 May 1991</span>
+        </li>
       </ul>
-      <!-- ./Work in Tunisia branch -->
-      <li class="commit" data-date="2014-09-14">
-        <span class="title">Started studies @ESPRIM:</span>
-        <span class="desc">Computer Science Engineering</span>
-        <span class="date">September 2014</span>
-      </li>
-      <li class="commit" data-date="2014-06-15">
-        <span class="title">Licence Graduation @ISIMM:</span>
-        <span class="desc">Computer Science degree</span>
-        <span class="date">June 2014</span>
-      </li>
-      <!-- Final Study Project branch -->
-      <ul class="branch finalstudyprjct-branch" data-label="finalstudyprjct">
-        <li class="commit merge" data-branch="master" data-date="2014-06-01"></li>
-        <li class="commit" data-date="2014-04-01">
-          <span class="title">Intern @Proxym-IT:</span>
-          <span class="desc">Created a Single Page App JS Framework</span>
-          <span class="date">April 2014</span>
-        </li>
-        <li class="commit new-branch" data-branch="master" data-date="2014-03-01"> </li>
-      </ul>
-      <!-- ./Final Study Project branch -->
-      <li class="commit" data-date="2011-09-14">
-        <span class="title">Started @ISIMMM:</span>
-        <span class="desc">Computer Science degree</span>
-        <span class="date">September 2011</span>
-      </li>
-      <!-- Jasmine Spring branch -->
-      <ul class="branch jasminespring-branch" data-label="jasminespring">
-        <li class="commit merge" data-branch="master" data-date="2011-09-01"></li>
-        <li class="commit" data-date="2011-04-01">
-          <span class="title">Preparatory class:</span>
-          <span class="desc">Technical cursus - Aborded.</span>
-          <span class="date">April 2011</span>
-        </li>
-        <li class="commit new-branch" data-branch="master" data-date="2010-06-15"> </li>
-      </ul>
-      <!-- ./Jasmine Spring branch -->
-      <!-- Ignore me, I'm just helping clear this mess up -->
-      <li class="commit" data-date="2010-06-15">
-        <span class="title">Added basic dependecies:</span>
-        <span class="desc">Bachelor degree</span>
-        <span class="date">June 2010</span>
-      </li>
-      <li class="commit" data-date="2006-05-01">
-        <span class="title">Web 1.0:</span>
-        <span class="desc">Started learning HTML, CSS, PHP</span>
-        <span class="date">Around 2006</span>
-      </li>
-      <li class="commit" data-date="2004-08-01">
-        <span class="title">Added TCP/IP abilities:</span>
-        <span class="desc">Discovered the Internet</span>
-        <span class="date">Around August 2004</span>
-      </li>
-      <li class="commit" data-date="1991-05-29">
-        <span class="title">Initial commit:</span>
-        <span class="desc">Born innocent and vulnerable</span>
-        <span class="date">29 May 1991</span>
-      </li>
-    </ul>
-  </div>
-  <footer>
-    This work is under <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT licence</a> You can find this work in <a href="https://github.com/tarkant/personal-cv" target="_blank" rel="noopener">my github</a>.
-  </footer>
-  <%if (cfAnalytics) { %>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "<%= cfAnalytics %>"}'></script><!-- End Cloudflare Web Analytics -->
-  <% } %>
-  <%if (gAnalytics) { %>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= gAnalytics %>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    </div>
+    <footer>
+      This work is under <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT licence</a>
+      You can find this work in <a href="https://github.com/tarkant/personal-cv" target="_blank" rel="noopener">my
+        github</a>.
+    </footer>
+    <%if (cfAnalytics) { %>
+      <!-- Cloudflare Web Analytics -->
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "<%= cfAnalytics %>"}'></script><!-- End Cloudflare Web Analytics -->
+      <% } %>
+        <%if (gAnalytics) { %>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=<%= gAnalytics %>"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-    gtag('config', '<%= gAnalytics %>');
-  </script>
-  <% } %>
+            gtag('config', '<%= gAnalytics %>');
+          </script>
+          <% } %>
+  </div>
 </body>
 
 </html>
