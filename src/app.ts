@@ -1,7 +1,7 @@
 import './styles.scss';
 import DATA from './assets/data.json';
 
-/** Created by Tarek Jellali under CC-BY-NC licence.
+/** Created by Tarek Jellali under MIT License.
  * you can use back all this work in any other work
  * I'd love to be credited for this work if it helped.
  */
@@ -22,7 +22,15 @@ function putEmails() {
 }
 putEmails();
 
-function setupListners() {
+function setupListeners() {
+  // Hide loader and display content
+  window.addEventListener(
+    'load',
+    function () {
+      document.querySelector('.loader').setAttribute('style', 'opacity: 0;');
+      document.querySelector('.content').setAttribute('style', 'content: 1;');
+    },
+  );
   /* mini-plus button for the name */
   document
     .querySelector('.display-name')
@@ -62,4 +70,4 @@ function setupListners() {
     }`;
   });
 }
-setupListners();
+setupListeners();
