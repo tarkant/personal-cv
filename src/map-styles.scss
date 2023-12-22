@@ -1,0 +1,13 @@
+@import '~mapbox-gl/dist/mapbox-gl.css';
+
+.popup {
+    background: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: all;
+}

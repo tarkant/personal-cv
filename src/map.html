@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+      name="viewport"
+    />
+    <meta name="theme-color" content="#2196F3" />
+    <title>Tarek Jellali | Online Resume</title>
+    <meta
+      name="description"
+      content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@tarkant_t29" />
+    <meta name="twitter:title" content="Tarek Jellali | Online Resume" />
+    <meta
+      name="twitter:description"
+      content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tarekjellali.com/img/tarek-jellali.jpg"
+    />
+    <meta property="og:url" content="https://tarekjellali.com" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Tarek Jellali | Online Resume" />
+    <meta
+      property="og:description"
+      content="My name is Tarek Jellali and I am a Frontend Web Developer, let's get in touch."
+    />
+    <meta
+      property="og:image"
+      content="https://tarekjellali.com/img/tarek-jellali.jpg"
+    />
+  </head>
+  <body>
+    <style>
+      .loader {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .loader {
+          background-color: #141619;
+        }
+      }
+
+      .loader:after {
+        content: "";
+        width: 5rem;
+        height: 5rem;
+        align-self: center;
+        justify-self: center;
+        border: solid 1rem #e0e0e0;
+        border-left: solid 1rem #016de5;
+        border-radius: 100%;
+        animation: spin 2s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="loader" style="opacity: 1"></div>
+    <div class="content" style="opacity: 0">
+        <div class="popup"></div>
+      <div id="map"></div>
+      <footer>
+        This work is under
+        <a
+          href="https://opensource.org/licenses/MIT"
+          target="_blank"
+          rel="noopener"
+          >MIT licence</a
+        >
+        You can find this work in
+        <a
+          href="https://github.com/tarkant/personal-cv"
+          target="_blank"
+          rel="noopener"
+          >my github</a
+        >.
+      </footer>
+      <%if (cfAnalytics) { %>
+      <!-- Cloudflare Web Analytics -->
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "<%= cfAnalytics %>"}'
+      ></script>
+      <!-- End Cloudflare Web Analytics -->
+      <% } %> <%if (gAnalytics) { %>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=<%= gAnalytics %>"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "<%= gAnalytics %>");
+      </script>
+      <% } %>
+    </div>
+  </body>
+</html>

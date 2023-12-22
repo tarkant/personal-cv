@@ -4,10 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CopywebpackPlugin = require('copy-webpack-plugin');
 
+const webpack = require('webpack');
+
+require('dotenv').config({ path: './.env' });
+
 module.exports = {
   context: __dirname,
   entry: {
-    app: './src/app.ts'
+    app: './src/app.ts',
+    map: './src/map.ts',
   },
   output: {
     filename: '[name].js',
@@ -38,11 +43,25 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: 'src/index.html',
       templateParameters: {
         cfAnalytics: process.env && process.env.CF_ANALYTICS,
         gAnalytics: process.env && process.env.GA_ANALYTICS,
-      }
+      },
+      chunks: ['app'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'map.html',
+      template: 'src/map.html',
+      templateParameters: {
+        cfAnalytics: process.env && process.env.CF_ANALYTICS,
+        gAnalytics: process.env && process.env.GA_ANALYTICS,
+      },
+      chunks: ['map'],
+    }),
+    new webpack.DefinePlugin({
+      __MAPBOX_KEY__: JSON.stringify(process.env && process.env.MAPBOX_KEY),
     }),
     new CopywebpackPlugin({
       patterns: [

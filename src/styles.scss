@@ -735,3 +735,8 @@ ul.branch.master-branch {
     color: #a0a5aa;
   }
 }
+
+#map {
+  width: 100vw;
+  height: calc(100vh - 45px);
+}
